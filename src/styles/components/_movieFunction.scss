@@ -1,0 +1,60 @@
+.movieFunctionContainer{
+    width: 31%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover{
+        scale: 1.05;
+
+        .capa{
+            backdrop-filter: blur(0);
+            -webkit-backdrop-filter: blur(0);
+        }
+    }
+
+    .capa{
+        background-color: #00000080;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(3px);
+        transition: all 0.3s ease;
+        padding: 20px;
+
+        h2{
+            color: #ffffff;
+            position: relative;
+            font-size: 25px;
+            font-family: OpenSansSemiBold, Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        p{
+            color: #fff;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 15px;
+        }
+
+        .date{
+            left: 15px;
+        }
+
+        .status{
+            right: 15px;
+            font-family: OpenSansBold, Arial, Helvetica, sans-serif;
+        }
+    }
+}
